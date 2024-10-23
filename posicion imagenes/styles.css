@@ -73,8 +73,9 @@ div:nth-of-type(9) {
 }
 
 div:nth-of-type(10) {
-    width: 60vw;
+    width: 90vw;
+    height: 90vh;
     background-image: url(assets/arbol.png), url(assets/aves.png), url(assets/cielo.png);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size:cover;
 }
