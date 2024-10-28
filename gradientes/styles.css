@@ -1,0 +1,116 @@
+
+body {
+    display: flex;
+    align-items: center;
+    font-family: Arial, sans-serif;
+}
+
+div {
+    margin: 20px;
+}
+
+div:nth-of-type(1) {
+    font-size: 36px;
+    font-weight: bold;
+    background: linear-gradient(rgba(75,0,130,255), rgba(255,105,180,255));
+    background-clip: content-box;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+div:nth-of-type(2) {
+    width: 600px;
+    height: 150px;
+}
+
+div:nth-of-type(2)::before {
+    content: "";
+    display: block;
+    height: 100%;
+    background: linear-gradient(to right, black, blue, yellow, green, red);
+}
+
+div:nth-of-type(3) {
+    height: 150px;
+    position: relative;
+}
+
+div:nth-of-type(3)::before, div:nth-of-type(3)::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    background: repeating-linear-gradient(
+        to bottom,
+        blue, blue 10px,
+        yellow 10px, yellow 20px,
+        red 20px, red 30px
+    );
+}
+
+div:nth-of-type(4) {
+    height: 200px;
+    width: 400px;
+    background: radial-gradient(ellipse at center, yellow, red, black);
+}
+
+div:nth-of-type(5) {
+    background-color: black;
+    width: 400px;
+    height: 200px;
+    background: radial-gradient(ellipse, yellow 50%, red 55%, black 80%);
+}
+
+div:nth-of-type(6) {
+    width: 400px;
+    height: 200px;
+    background: radial-gradient(circle, yellow 60%, red 65%, black 90%);
+}
+
+div:nth-of-type(7) {
+    width: 400px;
+    height: 200px;
+    background: radial-gradient(circle at left, yellow 60%, red 70%, black);
+}
+
+div:nth-of-type(8) {
+    width: 500px;
+    height: 150px;
+    background: radial-gradient(circle, rgb(2, 2, 205), rgb(137, 10, 137), red, orange, yellow 80%);
+}
+
+div:nth-of-type(9) {
+    width: 500px;
+    height: 150px;
+    background: radial-gradient(ellipse, rgb(2, 2, 205) 5%, rgb(137, 10, 137) 15%, red, orange 60%, yellow 70%);
+}
+
+div:nth-of-type(10) {
+    width: 500px;
+    height: 150px;
+    background: radial-gradient(circle, rgb(2, 2, 205) 5%, rgb(137, 10, 137) 20%, red 60%, orange 80%, yellow 100%);
+}
+
+div:nth-of-type(11) {
+    width: 500px;
+    height: 300px;
+    background: repeating-radial-gradient(
+        circle,
+        rgb(255,68,68) 0%, rgb(255,68,68) 12.5%, 
+        rgb(255,0,0) 12.5%, rgb(255,0,0) 25%, 
+        rgb(139,0,0) 25%, rgb(139,0,0) 40%
+    );
+} 
+
+div:nth-of-type(12) {
+    width: 500px;
+    height: 300px;
+    background: conic-gradient(at top, blue, darkblue, black);
+}
+
+div:nth-of-type(13) {
+    width: 500px;
+    height: 300px;
+    background: repeating-conic-gradient(from 0deg, blue 10%, yellow 20%, red 30%);
+}
