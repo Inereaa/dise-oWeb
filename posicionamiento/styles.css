@@ -1,0 +1,166 @@
+
+/* GENERALES */
+*{
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+/* H1, H2 Y BARRA DE NAVEGACIÓN */
+h1, h2 {
+    text-align: center;
+    color: orange;
+    background-color: rgb(229, 229, 229);
+    padding: 20px;
+    border-bottom: solid 3px rgb(11, 190, 11);
+    margin: 0;
+}
+
+h1 {
+    font-weight: lighter;
+}
+
+nav {
+    height: 50px;
+    margin-top: -16px;
+    position: sticky;
+    top: 0;
+    margin-left: -40px;
+}
+
+nav > ul {
+    display: flex;
+    list-style: none;
+}
+
+nav > ul > li > a {
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    color: white;
+    background-color: rgb(99, 147, 229);
+    width: 250px;
+    text-align: center;
+}
+
+nav > ul > li:hover > a {
+    background-color: black;
+}
+
+nav > ul > li > a:hover {
+    background-color: black;
+}
+
+nav > ul > li > ul {
+    display: none;
+    width: 250px;
+    position: absolute;
+    background-color: black;
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul ul li a {
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+nav ul ul li a:hover {
+    background-color: orangered;
+}
+
+nav > ul > li:hover > ul {
+    display: block;
+}
+
+/* LINKS */
+main > div {
+    width: 100px;
+    margin: -1px;
+}
+
+main > div > a {
+    border: solid 1px orange;
+    border-top: none;
+    background-color: rgb(200, 255, 250);
+    padding: 5px;
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+    float: left;
+    width: 100px;
+    text-align: center;
+}
+
+main > div > a:hover {
+    color: blue;
+    background-color: orangered;
+}
+
+main > div > a::before {
+    content: "👉 ";
+}
+  
+/* IMÁGENES */
+h2  {
+    float: none;
+    clear: both;
+}
+
+#imagenes {
+    width: 500px;
+    margin: 0px auto;
+}
+
+section img {
+    float: left;
+    margin: 10px;
+    justify-content: center;
+    float: none;
+    clear: both;
+}
+
+section img:hover {
+    filter: invert(100%);
+}
+
+/* FOOTER */
+footer > div {
+    background-color: black;
+    height: 50px;
+}
+
+footer > div > a {
+    text-decoration: none;
+    color: rgb(81, 124, 253);
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+footer > div > a:hover {
+    color: #006196;
+    text-decoration: underline;
+}
+
+footer > div > a:last-child {
+    float: right;
+    padding-right: 15px;
+}
+
+footer > div > a:first-child {
+    float: left;
+    padding-left: 15px;
+}
+
+footer {
+    bottom: 0;
+    width: 100%;
+}
