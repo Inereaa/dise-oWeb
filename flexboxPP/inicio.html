@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> tripWme </title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <nav id="nav">
+        <ul>
+            <li>Inicio</li>
+            <li>Viajes</li>
+            <li><img src="logo.png" alt="logo_TWM"></li>
+            <li>Reventas</li>
+            <li>Mi perfil</li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="contenedor">
+            <img src="tripWme.png" alt="tripWme">
+            <div class="contenedor__datos">
+                <i class="icono1 fa-solid fa-magnifying-glass"></i>
+                <input type="text" placeholder="Destino...">
+                <i class="icono2 fa-regular fa-calendar-days"></i>
+                <input type="text" placeholder="Introduzca una fecha">
+            </div>
+            <div class="contenedor__presupuesto">
+                <p>¿Cuál es su presupuesto?</p>
+                <input type="range" min="50" max="500" value="275">
+                <p id="min">€50</p>
+                <p id="max">€500+</p>
+            </div>
+            <input type="submit" value="BUSCAR VIAJES">
+        </section>
+
+        <section class="viajes">
+            <section class="viajes__alemania">
+                <p>ALEMANIA</p>
+                <div class="foto"></div>
+                <input type="submit" value="Solicitar ingreso">
+            </section>
+    
+            <section class="viajes__francia">
+                <p>FRANCIA</p>
+                <div class="foto"></div>
+                <input type="submit" value="Solicitar ingreso">
+            </section>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer__logo">
+            <img src="logo.png" alt="logo">
+            <p id="tripWme">tripWme</p>
+        </div>
+        <div class="footer__enlaces">
+            <a href="#">Términos y condiciones</a>
+            <a href="#">Uso de cookies</a>
+            <a href="#">Política de privacidad</a>
+        </div>
+        <div class="footer__derechos">
+            <p>&copy; 2024 - 2024 tripWme. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>

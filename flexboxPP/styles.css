@@ -1,0 +1,270 @@
+
+/* Importo una fuente para toda la página */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Estilos generales y para todo el body */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Lato", "sans-serif";
+}
+
+/* Defino las variables */
+:root {
+    --color-primary: #74967D;
+    --color-seconday: #770b0d;
+    --box-shadow: 0 0 10px;
+}
+
+/* Barra de navegación */
+#nav {
+    top: 0;
+    position: sticky;
+    background-color: var(--color-primary);
+    height: 120px;
+    z-index: 1;
+}
+
+#nav ul {
+    display: flex;
+    list-style: none;
+    padding: 50px;
+    justify-content: space-between;
+    font-weight: bold;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+#nav img {
+    margin-top: -35px;
+}
+
+#nav li:hover {
+    color: var(--color-seconday);
+    cursor: pointer;
+}
+
+/* MAIN */
+main {
+    background-image: url(fondo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 1000px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Sección 1 */
+.contenedor {
+    background-color: rgba(116, 150, 125, 0.5);
+    height: 400px;
+    width: 450px;
+    margin-top: -50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    border-radius: 30px;
+    box-shadow: var(--box-shadow);
+    color: rgb(34, 34, 34);
+}
+
+.contenedor img {
+    width: 30%;
+}
+
+.contenedor__datos {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.icono1 {
+    position: absolute;
+    margin-top: 12px;
+    margin-left: 15px;
+    color: rgb(61, 61, 61);
+}
+
+.icono2 {
+    position: absolute;
+    margin-top: 75px;
+    margin-left: 15px;
+    color: rgb(61, 61, 61);
+}
+
+.contenedor input[type="text"] {
+    width: 300px;
+    padding: 13px;
+    border-radius: 50px;
+    border: var(--color-primary);
+    background-color: var(--color-primary);
+    text-indent: 30px;
+}
+
+.contenedor input[type="text"]::placeholder {
+    color: rgb(61, 61, 61);
+}
+
+.contenedor__presupuesto {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.contenedor__presupuesto #min {
+    float: left;
+    margin-right: 15px;
+    margin-left: 17px;
+    margin-top: 13px;
+}
+
+.contenedor__presupuesto #max {
+    float: right;
+    margin-left: 15px;
+    margin-top: 13px;
+}
+
+.contenedor input[type="range"] {
+    -webkit-appearance: none; /* para quitar el estilo predeterminado */
+    width: 200px;
+    height: 8px;
+    background: var(--color-seconday);
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.contenedor input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none; /* para quitar el estilo predeterminado */
+    width: 18px;
+    height: 17px;
+    border-radius: 50%;
+    border: 2px solid var(--color-primary);
+    background-color: var(--color-seconday);
+    cursor: pointer;
+}
+
+.contenedor input[type="submit"] {
+    padding: 14px;
+    background-color: var(--color-seconday);
+    color: white;
+    border-radius: 10px;
+    margin-top: 20px;
+    border: #770b0d;
+    font-weight: bold;
+}
+
+.contenedor input[type="submit"]:hover {
+    cursor: pointer;
+    background-color: rgb(150, 182, 158);
+    color: var(--color-seconday);
+}
+
+/* Secciones 2 y 3 */
+.viajes {
+    margin-top: 100px;
+    margin-left: -470px;
+    height: 300px;
+    width: 450px;
+    display: flex;
+    gap: 200px;
+    align-items: center;
+    font-weight: bold;
+}
+
+.viajes__alemania, .viajes__francia {
+    text-align: center;
+    font-size: 20px;
+    padding: 30px;
+    border-radius: 30px;
+    box-shadow: var(--box-shadow);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+input[type="submit"] {
+    padding: 10px;
+    background-color: var(--color-seconday);
+    color: white;
+    border-radius: 10px;
+    border: #770b0d;
+    font-weight: bold;
+    cursor: pointer;
+    width: 150px;
+}
+
+input[type="submit"]:hover {
+    background-color: rgb(150, 182, 158);
+    color: var(--color-seconday);
+}
+
+/* Sección 2 */
+.viajes__alemania {
+    background-color: #c1bf98;
+}
+
+.viajes__alemania .foto {
+    background-image: url(alemania.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 150px;
+    width: 300px;
+    border-radius: 5%;
+}
+
+/* Sección 3 */
+.viajes__francia {
+    background-color: #d2d4e7;
+}
+
+.viajes__francia .foto {
+    background-image: url(francia.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 150px;
+    width: 300px;
+    border-radius: 5%;
+}
+
+/* Footer */
+footer {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-primary);
+    align-items: center;
+    gap: 30px;
+}
+
+.footer__logo {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    color: var(--color-seconday);
+    font-weight: bold;
+    gap: 20px;
+}
+
+.footer__enlaces a {
+    color: rgb(39, 39, 39);
+    margin: 30px;
+}
+
+.footer__enlaces a:hover {
+    text-decoration: none;
+}
+
+.footer__derechos {
+    color: rgb(61, 61, 61);
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-size: 14px;
+}
