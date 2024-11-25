@@ -1,0 +1,136 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+h2 {
+    margin-left: 250px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+h2::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 80%;
+    border-bottom: 4px solid rgb(110, 73, 162);
+}
+
+.images {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    width: 60%;
+    margin: auto;
+}
+
+.images img {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.show {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.65); /* para que aparezca con un fondo negro difuminado */
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+
+    transform: scale(0);
+    transition: transform 0.5s linear;
+}
+
+.show:target {
+    transform: scale(1);
+}
+
+.show__image {
+    width: 90%;
+    height: 70%;
+    background-size: cover;
+    background-position: center;
+    margin: auto;
+
+    position: relative;
+}
+
+.show__image1 {
+    background-image: url('imagen1.jpg');
+}
+
+.show__image2 {
+    background-image: url('imagen2.jpg');
+}
+
+.show__image3 {
+    background-image: url('imagen3.jpg');
+}
+
+.show__image4 {
+    background-image: url('imagen4.jpg');
+}
+
+.show__image5 {
+    background-image: url('imagen5.jpg');
+}
+
+.show__image6 {
+    background-image: url('imagen6.jpg');
+}
+
+.show__close {
+    background-color: crimson;
+    color: white;
+    display: block;
+    width: 30px;
+    height: 30px;
+    text-decoration: none;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 20px;
+
+    position: absolute;
+    top: -10px;
+    right: -10px;
+}
+
+.images__img {
+    overflow: hidden;
+}
+
+a {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.hover {
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(31, 78, 165, 0.5);
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transform: translate(0%, 200%);
+    transition: transform 0.5s linear;
+    top: -100px;
+}
+
+.images__img:hover .hover {
+    transform: translateY(100px);
+}
