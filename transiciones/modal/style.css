@@ -94,7 +94,7 @@ p {
 
     transform: scale(0);
     clip-path: circle(0% at 100% 0);
-    transition: transform 0.5s linear, clip-path 3s ease-in-out;
+    transition: transform 0.5s linear, clip-path 1s ease-in-out;
 
     z-index: 1;
 }
