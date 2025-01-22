@@ -1,0 +1,52 @@
+
+$color: #5faee3;
+
+@mixin anchoAlto {
+    height: 100px;
+    width: 100px;
+}
+
+div {
+    @include anchoAlto;
+    margin-bottom: 10px;
+    transition: transform 0.5s linear;
+
+    p {
+        margin-left: 10px;
+    }
+
+    &:hover {
+        cursor: pointer;
+        transform: scale(1.1);
+    }
+}
+
+.box-1 {
+    $bg-color: lighten($color, 0%);
+    background-color: $bg-color;
+    border: 1px solid darken($bg-color, 10%);
+}
+
+.box-2 {
+    $bg-color: lighten($color, 10%);
+    background-color: $bg-color;
+    border: 1px solid darken($bg-color, 10%);
+}
+
+.box-3 {
+    $bg-color: lighten($color, 20%);
+    background-color: $bg-color;
+    border: 1px solid darken($bg-color, 10%);
+}
+
+.box-4 {
+    $bg-color: lighten($color, 30%);
+    background-color: $bg-color;
+    border: 1px solid darken($bg-color, 10%);
+}
+
+.box-5 {
+    $bg-color: lighten($color, 40%);
+    background-color: $bg-color;
+    border: 1px solid darken($bg-color, 10%);
+}
